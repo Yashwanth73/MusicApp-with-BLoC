@@ -29,7 +29,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Trending"),
+          title: const Text("Trending Tracks"),
+          centerTitle: true,
         ),
         body: StreamBuilder<List<TrackList>>(
             stream: trackBloc.trackStream,
